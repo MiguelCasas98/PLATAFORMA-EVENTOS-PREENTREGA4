@@ -26,34 +26,38 @@ Se mantiene el uso de JWT y cookies HTTP Only, incorporando estrategias Passport
  
 ```
 src/
-  app.js
-  server.js
-  config/
-    db.js
-    config.js
-    passport.config.js
-  routes/
-    events.router.js
-    sessions.router.js
-  controllers/
-    events.controller.js
-    sessions.controller.js
-  services/
-    Sessions.service.js
-  repositories/
-    users.repository.js
-  dao/
-    users.dao.js
-  models/
-    User.js
-    Event.js
-    Session.js
-  utils/
-    hash.js
-    jwt.js
+├── app.js
+├── server.js
+├── config/
+│   ├── config.js
+│   ├── db.js
+│   └── passport.config.js
+├── controllers/
+│   ├── events.controller.js
+│   └── sessions.controller.js
+├── dao/
+│   └── users.dao.js
+├── models/
+│   ├── Event.js
+│   ├── Session.js
+│   └── User.js
+├── repositories/
+│   └── users.repository.js
+├── routes/
+│   ├── events.router.js
+│   └── sessions.router.js
+├── services/
+│   └── Sessions.service.js
+├── utils/
+│   ├── hash.js
+│   └── jwt.js
+├── app.js
+└── server.js
+
 .env.example
 .gitignore
 package.json
+package-lock.json
 README.md
 ```
  
